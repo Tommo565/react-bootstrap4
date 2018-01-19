@@ -4,15 +4,22 @@ import bootstrapSelect from 'bootstrap-select/dist/js/bootstrap-select.js'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-ReactDOM.render(
-	<h1 className = "text-center">Hello React!</h1>,
-	document.getElementById('app')
+// Basic Rendering
+
+const renderHello = React.createElement('h1',{'className':'text-center'},'Hello React')
+ReactDOM.render(renderHello, document.getElementById('app'))
+
+
+// Rendering from data
+
+const dataItems = ['Item1','Item2','Item3','Item4']
+
+const elementItems = React.createElement(
+	'ul',
+	{'className':'dataItems'},
+	dataItems.map((item, i) => 
+		React.createElement('li', {'key': i}, item)
+	)
 )
 
-
-
-
-
-
-
-
+ReactDOM.render(elementItems, document.getElementById('app'))
