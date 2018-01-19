@@ -1,0 +1,26 @@
+*/node_modules/*
+/node_modules/*
+*/data/*
+*.pyc
+*~
+**/__pycache__
+**/venv
+**/db.sqlite3
+**/.DS_Store
+**/.ipynb_checkpoints
+.ropeproject
+
+
+# Dashboard files
+dash/node_modules
+
+# Custom files
+secrets.py
+*.pyc
+*~
+*.msg
+*.xml
+*.zip
+*.csv
+*.xlsx
+instructions.txt

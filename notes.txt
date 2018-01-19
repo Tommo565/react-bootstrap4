@@ -1,0 +1,6 @@
+// Notes file
+
+React: Creating views.
+ReactDOM: Rendering UI to the browser.
+
+
