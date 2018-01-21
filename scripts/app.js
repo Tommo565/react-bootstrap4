@@ -38,22 +38,33 @@ const dataItems = ['Item1','Item2','Item3','Item4']
 // 	}
 // }
 
-// Functional Component (Stateless)
+// Functional Component (Stateless) via a factory
 
 // const ElementItems = props => 
 // 	React.createElement ('ul', {className: 'dataItems'},
 // 		props.dataItems.map( (dataItem, i) =>
-// 			React.createElement('li', {key : i}, dataItem)
-//			console.log(this)
+// 			React.DOM.li({key : i}, dataItem)
+// 			console.log(this)
 // 		)
 // 	)
 
+// ReactDOM.render(
+// 	React.createElement(ElementItems, {dataItems}, null),
+// 	document.getElementById('app')
+// )
+
+// Factories
+
+const ElementItems = React.createElement(
+	'ul', {'className':'dataItems'},
+	dataItems.map( (item, key) => 
+		React.DOM.li({key}, item)
+	)
+)
 
 ReactDOM.render(
-	React.createElement(ElementItems, {dataItems}, null),
+	ElementItems,
 	document.getElementById('app')
-)	
-
-
+)
 
 
