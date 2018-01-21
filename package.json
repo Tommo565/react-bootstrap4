@@ -17,6 +17,8 @@
   },
   "homepage": "git+https://github.com/departmentfortransport/react-bootstrap4#readme",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "bootbox": "^4.4.0",
     "bootstrap": "^4.0.0",
     "bootstrap-select": "^1.12.2",
@@ -32,6 +34,7 @@
   "devDependencies": {
     "ajv": "^6.0.1",
     "autoprefixer": "^6.7.7",
+    "babel-code-frame": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
@@ -63,6 +66,7 @@
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.1",
     "postcss-simple-vars": "^3.1.0",
+    "strip-ansi": "^4.0.0",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.10.0",
