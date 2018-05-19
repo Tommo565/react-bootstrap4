@@ -1,2 +1,3 @@
 # react-bootstrap4
-Repo to experiment with React and Bootstrap 4
+
+Boilerplate code for React projects. Now with added Bootstrap 4.
